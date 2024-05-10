@@ -1,0 +1,6 @@
+starbuck_etl_analyst
+logs/*
+plugins/*
+.mypy_cache
+dags\__pycache__
+config
