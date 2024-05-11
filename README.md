@@ -11,9 +11,31 @@ Objective this project to analyst healty drink **(please drink water only if you
 * Extract data and transformation to SQL load to SQL extension 
 * Analyst with SQL (PostgresSQL)
 
-## Result 
+## Result
+<p>
+With analyst data using SQL with this code:
+
 <pre>
-To be continud because this project ongoing
+select "beverage", "sugars(g)" ,"calories" from menu_starbucks  as low_sugar_and_low_cal
+order by "calories" asc, "sugars(g)" asc
+limit 10
 </pre>
+|beverage|sugars(g)|calories|
+|--------|---------|--------|
+|Tazo® Tea|0|0|
+|Tazo® Tea|0|0|
+|Tazo® Tea|0|0|
+|Tazo® Tea|0|0|
+|Brewed Coffee|0|3|
+|Brewed Coffee|0|4|
+|Espresso|0|5|
+|Brewed Coffee|0|5|
+|Caffè Americano|0|5|
+|Brewed Coffee|0|5|
 
 
+
+## Conclusion
+* This data have 243 records data
+* Have 18 columns
+* Before inserted to table database, Transformation columns before Capitalize to lowercase and before have whitespace to "_" 
